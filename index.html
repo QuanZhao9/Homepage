@@ -1,18 +1,16 @@
-
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
 
-  <title>Quan Zhao's Homepage</title>
+  <title>Yunhe Wang's Homepage</title>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Quan Zhao is currently a Humboldt postodc at University of Regensburg">
-  <meta name="keywords" content="Quan Zhao, 赵泉, quanzhao, zhaoquan">
-  <meta name="author" content="Quan Zhao" />
+  <meta name="description" content="Yunhe Wang is currently a senior researcher at Huawei Noah's Ark Lab">
+  <meta name="keywords" content="Yunhe Wang, 王云鹤, wangyunhe, Yunhe, Wang, Deep Learning, Huawei, PKU, Computer, Vision">
+  <meta name="author" content="Yunhe Wang" />
 
   <link rel="stylesheet" href="w3.css">
 
@@ -21,7 +19,37 @@
   body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </style>
 
-  <link rel="shortcut icon" href="public/favicon-8b8719.ico">
+  <link rel="icon" type="image/png" href="images/icons.png">
+  <!--
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  //-->
+
 </head>
 
 
@@ -30,19 +58,22 @@
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    <h3><b>QZHAO</b></h3>
+    <h3><b>YUNHE</b></h3>
   </div>
   <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
     <a href="#home" class="w3-bar-item w3-button">Home</a>
-    <a href="#publications" class="w3-bar-item w3-button">Publications</a>
-    <a href="#research interest" class="w3-bar-item w3-button">Research</a>
+    <a href="#news" class="w3-bar-item w3-button">News</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#talks" class="w3-bar-item w3-button">Talks</a>
+    <a href="#publications" class="w3-bar-item w3-button">Research</a>
+    <a href="#service" class="w3-bar-item w3-button">Services</a>
     <a href="#award" class="w3-bar-item w3-button">Awards</a>
   </div>
 </nav>
-  
-  <!-- Top menu on small screens -->
+
+<!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24"><b>QZHAO</b></div>
+  <div class="w3-bar-item w3-padding-24">YUNHE</div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
   </div>
 </header>
@@ -57,18 +88,10 @@
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
 <!-- The Home Section -->
-    <div class ="content bio">
-      <div class = "left">
-       <img src="images/matzh.jpeg">
-        
-      </div>
-      <div class = "right">
-        <div class = "line name">
-          <br/>
-          <span class ="name"> Quan Zhao</span>
-          <span class ="ChineseName"> 赵泉</span>
-        </div>
-        <div class = "line intro">
+    <div class="w3-container w3-center w3-padding-32" id="home">
+      <img style="width: 80%;max-width: 220px" alt="profile photo" src="images/matzh.jpeg">
+      <h1>Yunhe Wang</h1>
+        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
          I am currently a postodc with the Humboldt Fellowship in the group of  <a href="http://www.mathematik.uni-regensburg.de/Mat8/lst/">Prof. Dr. Harald Garcke</a> at the Department of Mathematics, University of Regensburg, Regensburg, Germany.
          <br/> I received my Ph.D. from the Department of Mathematics in NUS in 2017, under the supervision of <a href= "https://blog.nus.edu.sg/matbwz/"> Prof. Weizhu Bao</a> and <a href="https://discovery.nus.edu.sg/3166-weiqing-ren"> Prof. Weiqing Ren</a>. 
          <br/> I obtained my Bachelor's degree at the Department of Mathematics,  University of Science and Technology of China in 2013.
@@ -80,8 +103,6 @@
           <a href="https://www.researchgate.net/profile/Quan-Zhao-6">Researchgate</a> 
         </p>
         </tbody></table>
-  </div>
-  </div>
 </div>
 
 <!-- The Publications Section -->
