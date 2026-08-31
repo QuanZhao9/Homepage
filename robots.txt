@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quanzhao9.github.io/Homepage/sitemap.xml
