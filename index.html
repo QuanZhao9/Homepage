@@ -9,10 +9,10 @@
     >
     <meta
       name="keywords"
-      content="Quan Zhao, Zhao Quan, computational mathematics, numerical analysis, free boundary problems, multiphase flow, USTC"
+      content="Quan Zhao, Zhao Quan, computational mathematics, numerical analysis, free boundary problems, geometric flows, multiphase flow, USTC"
     >
     <meta name="author" content="Quan Zhao">
-    <meta name="theme-color" content="#0b4f78">
+    <meta name="theme-color" content="#f2f6f2">
 
     <link rel="canonical" href="https://quanzhao9.github.io/Homepage/">
 
@@ -25,19 +25,15 @@
     <meta property="og:url" content="https://quanzhao9.github.io/Homepage/">
     <meta property="og:image" content="https://quanzhao9.github.io/Homepage/assets/quan-zhao.png">
     <meta property="og:image:alt" content="Portrait of Quan Zhao">
-
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Quan Zhao | Computational &amp; Applied Mathematics">
-    <meta
-      name="twitter:description"
-      content="Research Professor in computational and applied mathematics at USTC."
-    >
 
     <title>Quan Zhao | Computational &amp; Applied Mathematics</title>
 
     <link rel="icon" href="./assets/quan-zhao.png" type="image/png">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./publications.js" defer></script>
     <script src="./script.js" defer></script>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -62,502 +58,277 @@
   </head>
 
   <body>
+    <div class="page-grid" aria-hidden="true"></div>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header" data-header>
-      <div class="nav-shell">
-        <a class="wordmark" href="#home" aria-label="Quan Zhao, home">
-          <span class="wordmark-mark" aria-hidden="true">QZ</span>
-          <span class="wordmark-text">
-            <strong>Quan Zhao</strong>
-            <small>Computational Mathematics</small>
+      <div class="header-shell">
+        <a class="brand" href="#home" aria-label="Quan Zhao, home">
+          <span class="brand-mark" aria-hidden="true"><i>QZ</i></span>
+          <span>
+            <strong>QUAN ZHAO</strong>
+            <small>RESEARCH ATLAS</small>
           </span>
         </a>
 
         <button
-          class="nav-toggle"
+          class="menu-button"
           type="button"
           aria-expanded="false"
-          aria-controls="site-navigation"
-          data-nav-toggle
-        >
-          <span class="sr-only">Toggle navigation</span>
-          <span></span>
-          <span></span>
-        </button>
+          aria-controls="primary-navigation"
+          data-menu-button
+        >MENU</button>
 
-        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-nav>
-          <a href="#about">About</a>
+        <nav id="primary-navigation" aria-label="Primary navigation" data-navigation>
+          <a href="#about">Profile</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
-          <a
-            class="nav-external"
-            href="https://faculty.ustc.edu.cn/zhaoquan1/en/index.htm"
-            target="_blank"
-            rel="noreferrer"
-          >
-            USTC Profile <span aria-hidden="true">↗</span>
-          </a>
+          <a class="faculty-link" href="https://faculty.ustc.edu.cn/zhaoquan1/en/index.htm" target="_blank" rel="noreferrer">USTC ↗</a>
         </nav>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="hero section-shell" id="home">
-        <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Numerical analysis · scientific computing</p>
-          <h1>
-            Mathematics for
-            <span>evolving interfaces.</span>
-          </h1>
-          <p class="hero-intro">
-            I am <strong>Quan Zhao (赵泉)</strong>, a Research Professor in the Department of
-            Mathematics at the University of Science and Technology of China. My research
-            develops structure-preserving numerical methods for interface dynamics, geometric
-            evolution equations, and multiphase flows.
+      <section class="atlas-hero section-shell" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">RESEARCH / COMPUTATIONAL MATHEMATICS</p>
+          <h1>Geometry in motion, <em>computation with structure.</em></h1>
+          <p class="hero-lead">
+            I am <strong>Quan Zhao (赵泉)</strong>, a Research Professor at the University of
+            Science and Technology of China. I develop mathematical models and reliable numerical
+            methods for evolving interfaces, geometric flows, and multiphase systems.
           </p>
-
           <div class="hero-actions">
-            <a class="button button-primary" href="#research">Explore my research</a>
-            <a class="button button-secondary" href="mailto:quanzhao@ustc.edu.cn">
-              quanzhao@ustc.edu.cn
-            </a>
-          </div>
-
-          <ul class="profile-links" aria-label="Academic profiles">
-            <li>
-              <a
-                href="https://scholar.google.com/citations?user=8vYkGpEAAAAJ&amp;hl=en"
-                target="_blank"
-                rel="noreferrer"
-              >Google Scholar <span aria-hidden="true">↗</span></a>
-            </li>
-            <li>
-              <a
-                href="https://www.researchgate.net/profile/Quan-Zhao-6"
-                target="_blank"
-                rel="noreferrer"
-              >ResearchGate <span aria-hidden="true">↗</span></a>
-            </li>
-            <li>
-              <a
-                href="https://faculty.ustc.edu.cn/zhaoquan1/en/index.htm"
-                target="_blank"
-                rel="noreferrer"
-              >USTC Faculty Page <span aria-hidden="true">↗</span></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="hero-visual" data-reveal>
-          <div class="portrait-frame">
-            <div class="portrait-grid" aria-hidden="true"></div>
-            <p class="equation equation-one" aria-hidden="true">V<sub>n</sub> = Δ<sub>s</sub> κ</p>
-            <p class="equation equation-two" aria-hidden="true">E<sup>m+1</sup> ≤ E<sup>m</sup></p>
-            <img
-              src="./assets/quan-zhao.png"
-              width="248"
-              height="298"
-              alt="Portrait of Quan Zhao"
-            >
-          </div>
-          <div class="appointment-card">
-            <span>Current appointment</span>
-            <strong>Research Professor</strong>
-            <p>Department of Mathematics · USTC</p>
+            <a class="primary-link" href="#research">Open the research atlas <span>↓</span></a>
+            <a class="quiet-link" href="mailto:quanzhao@ustc.edu.cn">quanzhao@ustc.edu.cn ↗</a>
           </div>
         </div>
-      </section>
 
-      <section class="about section-shell section-pad" id="about">
-        <div class="section-heading" data-reveal>
-          <p class="section-index">01 · About</p>
-          <h2>Computing the dynamics of shape and interface.</h2>
-        </div>
+        <div class="hero-visual" role="img" aria-label="A mathematical illustration of evolving interfaces">
+          <div class="visual-label label-one">Γ(t)</div>
+          <div class="visual-label label-two">E<sup>m+1</sup> ≤ E<sup>m</sup></div>
+          <svg viewBox="0 0 520 430" role="img" aria-label="Two evolving interfaces and their trajectories">
+            <defs>
+              <radialGradient id="hero-glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#89cfc0" stop-opacity="0.25"></stop>
+                <stop offset="100%" stop-color="#89cfc0" stop-opacity="0"></stop>
+              </radialGradient>
+            </defs>
+            <circle cx="260" cy="215" r="190" fill="url(#hero-glow)"></circle>
+            <circle class="orbit orbit-one" cx="260" cy="215" r="155"></circle>
+            <circle class="orbit orbit-two" cx="260" cy="215" r="112"></circle>
+            <path class="interface interface-back" d="M82 216 C120 108 216 122 260 216 C304 310 400 324 438 216 C400 108 304 122 260 216 C216 310 120 324 82 216Z"></path>
+            <path class="interface interface-front" d="M98 216 C138 132 217 138 260 216 C303 294 382 300 422 216 C382 132 303 138 260 216 C217 294 138 300 98 216Z"></path>
+            <circle class="flow-point point-one" cx="98" cy="216" r="7"></circle>
+            <circle class="flow-point point-two" cx="422" cy="216" r="7"></circle>
+            <circle class="flow-core" cx="260" cy="216" r="10"></circle>
+          </svg>
 
-        <div class="about-grid">
-          <div class="prose" data-reveal>
-            <p>
-              My work lies at the intersection of applied mathematics, numerical analysis, and
-              scientific computing. I am particularly interested in mathematical models whose
-              geometry changes over time—and in algorithms that preserve the physical and
-              geometric structure of those models at the discrete level.
-            </p>
-            <p>
-              Before joining USTC, I was a Humboldt postdoctoral fellow in Harald Garcke’s group
-              at the University of Regensburg. I received my Ph.D. in Applied Mathematics from
-              the National University of Singapore under the supervision of Weizhu Bao and
-              Weiqing Ren.
-            </p>
-          </div>
-
-          <aside class="about-note" data-reveal>
-            <p class="note-label">For prospective students</p>
-            <p>
-              Motivated students interested in computational and applied mathematics are welcome
-              to get in touch about research opportunities.
-            </p>
-            <a href="mailto:quanzhao@ustc.edu.cn">Start a conversation <span aria-hidden="true">→</span></a>
-          </aside>
-        </div>
-      </section>
-
-      <section class="research section-pad" id="research">
-        <div class="section-shell">
-          <div class="section-heading section-heading-row" data-reveal>
+          <div class="profile-chip">
+            <img src="./assets/quan-zhao.png" width="248" height="298" alt="Portrait of Quan Zhao">
             <div>
-              <p class="section-index">02 · Research</p>
-              <h2>Structure, geometry, and computation.</h2>
+              <span>CURRENT APPOINTMENT</span>
+              <strong>Research Professor</strong>
+              <p>Department of Mathematics · USTC</p>
             </div>
-            <p class="section-summary">
-              Reliable numerical methods for complex interfacial phenomena across materials,
-              fluids, and geometric evolution.
-            </p>
+          </div>
+        </div>
+
+        <div class="hero-stats" role="group" aria-label="Profile summary">
+          <div><strong data-total-publications>35</strong><span>PUBLICATIONS &amp; PREPRINTS</span></div>
+          <div><strong>04</strong><span>CORE RESEARCH DIRECTIONS</span></div>
+          <div><strong>2023</strong><span>JOINED USTC</span></div>
+          <div><strong>2021</strong><span>HUMBOLDT FELLOWSHIP</span></div>
+        </div>
+      </section>
+
+      <section class="profile-section" id="about">
+        <div class="section-shell profile-layout">
+          <div class="section-heading">
+            <p class="section-index">01 / PROFILE</p>
+            <div>
+              <h2>From geometric models to dependable algorithms.</h2>
+              <p>
+                My work sits between applied mathematics, numerical analysis, and scientific
+                computing. The central question is how a computational method can preserve the
+                geometry, energy law, or conservation principle of the original model.
+              </p>
+            </div>
           </div>
 
-          <div class="research-grid">
-            <article class="research-card" data-reveal>
-              <span class="card-number">01</span>
-              <h3>Free boundary &amp; interface problems</h3>
+          <div class="profile-modules">
+            <article class="profile-module profile-story">
+              <span class="module-label">BACKGROUND</span>
               <p>
-                Modeling and efficient simulation of moving interfaces, including sharp- and
-                diffuse-interface descriptions.
+                Before joining USTC, I was a Humboldt postdoctoral fellow in Harald Garcke’s group
+                at the University of Regensburg. I received my Ph.D. in Applied Mathematics from
+                the National University of Singapore under the supervision of Weizhu Bao and
+                Weiqing Ren.
               </p>
-              <ul>
-                <li>Solid-state dewetting</li>
-                <li>Interface tracking</li>
-              </ul>
             </article>
 
-            <article class="research-card" data-reveal>
-              <span class="card-number">02</span>
-              <h3>Geometric evolution equations</h3>
-              <p>
-                Structure-preserving approximations for curvature-driven flows, surface
-                diffusion, and evolving networks.
-              </p>
-              <ul>
-                <li>Parametric finite elements</li>
-                <li>Energy stability</li>
-              </ul>
+            <article class="profile-module profile-links">
+              <span class="module-label">ACADEMIC PROFILES</span>
+              <a href="https://scholar.google.com/citations?user=8vYkGpEAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a>
+              <a href="https://www.researchgate.net/profile/Quan-Zhao-6" target="_blank" rel="noreferrer">ResearchGate <span>↗</span></a>
+              <a href="https://faculty.ustc.edu.cn/zhaoquan1/en/index.htm" target="_blank" rel="noreferrer">USTC Faculty Page <span>↗</span></a>
             </article>
 
-            <article class="research-card" data-reveal>
-              <span class="card-number">03</span>
-              <h3>Multiphase flow</h3>
+            <article class="profile-module student-module">
+              <span class="module-label">PROSPECTIVE STUDENTS</span>
               <p>
-                Numerical methods for two- and multiphase flows with moving contact lines,
-                surfactants, and triple junctions.
+                Students interested in computational and applied mathematics are welcome to get in
+                touch about research opportunities.
               </p>
-              <ul>
-                <li>Moving contact lines</li>
-                <li>Finite element methods</li>
-              </ul>
-            </article>
-
-            <article class="research-card" data-reveal>
-              <span class="card-number">04</span>
-              <h3>Scientific computing</h3>
-              <p>
-                Analysis and implementation of robust numerical schemes that respect conservation
-                laws and variational structure.
-              </p>
-              <ul>
-                <li>Numerical analysis</li>
-                <li>Efficient algorithms</li>
-              </ul>
+              <a href="mailto:quanzhao@ustc.edu.cn">Start a conversation →</a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="publications section-shell section-pad" id="publications">
-        <div class="section-heading section-heading-row" data-reveal>
+      <section class="research-section section-shell" id="research">
+        <div class="section-heading research-heading">
+          <p class="section-index">02 / RESEARCH ATLAS</p>
           <div>
-            <p class="section-index">03 · Publications</p>
-            <h2>Recent and selected work.</h2>
-          </div>
-          <a
-            class="text-link"
-            href="https://scholar.google.com/citations?user=8vYkGpEAAAAJ&amp;hl=en"
-            target="_blank"
-            rel="noreferrer"
-          >View Google Scholar <span aria-hidden="true">↗</span></a>
-        </div>
-
-        <div class="publication-featured" data-reveal>
-          <article>
-            <p class="publication-meta"><span>Preprint</span> 2024</p>
-            <h3>A variational front-tracking method for multiphase flow with triple junctions</h3>
-            <p>H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong></p>
-            <a href="https://arxiv.org/abs/2407.18529" target="_blank" rel="noreferrer">
-              arXiv:2407.18529 <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article>
-            <p class="publication-meta"><span>J. Comput. Phys.</span> 2024</p>
-            <h3>Parametric finite element approximations for anisotropic surface diffusion with axisymmetric geometry</h3>
-            <p>M. Li and <strong>Q. Zhao</strong></p>
-            <p class="publication-citation">Vol. 497, 112632</p>
-          </article>
-
-          <article>
-            <p class="publication-meta"><span>Comput. Math. Appl.</span> 2024</p>
-            <h3>Arbitrary Lagrangian–Eulerian finite element approximations for axisymmetric two-phase flow</h3>
-            <p>H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong></p>
-            <a href="https://arxiv.org/abs/2305.19434" target="_blank" rel="noreferrer">
-              arXiv:2305.19434 <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-
-          <article>
-            <p class="publication-meta"><span>J. Comput. Phys.</span> 2023</p>
-            <h3>Structure-preserving discretizations for two-phase Navier–Stokes flow using fitted and unfitted mesh approaches</h3>
-            <p>H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong></p>
-            <a href="https://arxiv.org/abs/2212.08398" target="_blank" rel="noreferrer">
-              arXiv:2212.08398 <span aria-hidden="true">↗</span>
-            </a>
-          </article>
-        </div>
-
-        <details class="publication-archive" data-publication-archive data-reveal>
-          <summary>
-            <span>Complete publication list</span>
-            <span class="summary-count">25 items</span>
-            <span class="summary-icon" aria-hidden="true">+</span>
-          </summary>
-
-          <div class="archive-content">
-            <h3>Preprints</h3>
-            <ol class="publication-list">
-              <li>
-                H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong>, “A variational
-                front-tracking method for multiphase flow with triple junctions,” submitted,
-                2024. <a href="https://arxiv.org/abs/2407.18529">arXiv:2407.18529</a>.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong>, W. Jiang, Y. Wang, D. J. Srolovitz, T. Qian, and W.
-                Bao, “Dynamics of small solid particles on substrates of arbitrary topography,”
-                submitted, 2024.
-              </li>
-            </ol>
-
-            <h3>Published and accepted</h3>
-            <ol class="publication-list">
-              <li>
-                M. Li and <strong>Q. Zhao</strong>, “Parametric finite element approximations for
-                anisotropic surface diffusion with axisymmetric geometry,” <em>J. Comput. Phys.</em>,
-                497, 112632, 2024.
-              </li>
-              <li>
-                H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong>, “Arbitrary
-                Lagrangian–Eulerian finite element approximations for axisymmetric two-phase
-                flow,” <em>Comput. Math. Appl.</em>, 155, 209–223, 2024.
-                <a href="https://arxiv.org/abs/2305.19434">arXiv:2305.19434</a>.
-              </li>
-              <li>
-                H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong>, “Unfitted finite element
-                methods for axisymmetric two-phase flow,” <em>J. Sci. Comput.</em>, 97(1), 14,
-                2023. <a href="https://arxiv.org/abs/2303.03085">arXiv:2303.03085</a>.
-              </li>
-              <li>
-                H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong>, “Structure-preserving
-                discretizations for two-phase Navier–Stokes flow using fitted and unfitted mesh
-                approaches,” <em>J. Comput. Phys.</em>, 112276, 2023.
-                <a href="https://arxiv.org/abs/2212.08398">arXiv:2212.08398</a>.
-              </li>
-              <li>
-                H. Garcke, P. Knopf, R. Nürnberg, and <strong>Q. Zhao</strong>, “A diffuse-interface
-                approach for solid-state dewetting with anisotropic surface energies,”
-                <em>J. Nonlinear Sci.</em>, 33, 34, 2023.
-                <a href="https://arxiv.org/abs/2210.01698">arXiv:2210.01698</a>.
-              </li>
-              <li>
-                W. Bao and <strong>Q. Zhao</strong>, “An energy-stable parametric finite element
-                method for simulating solid-state dewetting in three dimensions,”
-                <em>J. Comput. Math.</em>, 2023.
-                <a href="https://arxiv.org/abs/2012.11404">arXiv:2012.11404</a>.
-              </li>
-              <li>
-                W. Bao, H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong>, “A
-                structure-preserving finite element method of surface diffusion for curve networks
-                and surface clusters,” <em>Numer. Methods Partial Differential Equations</em>, 39(1),
-                759–794, 2023. <a href="https://arxiv.org/abs/2202.06775">arXiv:2202.06775</a>.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong>, S. Xu, and W. Ren, “A level set method for the simulation
-                of moving contact line in three dimensions,” <em>Commun. Comput. Phys.</em>, 32,
-                1310–1331, 2022. <a href="https://arxiv.org/abs/2111.13567">arXiv:2111.13567</a>.
-              </li>
-              <li>
-                W. Bao, H. Garcke, R. Nürnberg, and <strong>Q. Zhao</strong>, “Volume-preserving
-                parametric finite element methods for axisymmetric geometric evolution equations,”
-                <em>J. Comput. Phys.</em>, 460, 111180, 2022.
-              </li>
-              <li>
-                W. Bao and <strong>Q. Zhao</strong>, “A structure-preserving parametric finite
-                element method for surface diffusion,” <em>SIAM J. Numer. Anal.</em>, 59,
-                2775–2799, 2021.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong>, W. Ren, and Z. Zhang, “A thermodynamically consistent
-                model and its conservative numerical approximation for moving contact lines with
-                soluble surfactant,” <em>Comput. Methods Appl. Mech. Eng.</em>, 385, 114033, 2021.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong> and W. Ren, “A finite element method for electrowetting on
-                dielectric,” <em>J. Comput. Phys.</em>, 429, 109998, 2021.
-                <a href="https://doi.org/10.1016/j.jcp.2020.109998">DOI</a>.
-              </li>
-              <li>
-                W. Huang, W. Jiang, and <strong>Q. Zhao</strong>, “A θ-L formulation-based finite
-                element method for axisymmetric solid-state dewetting,”
-                <em>East Asian J. Appl. Math.</em>, 11(2), 389–405, 2021.
-                <a href="https://doi.org/10.4208/eajam.130920.071220">DOI</a>.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong>, W. Jiang, and W. Bao, “An energy-stable parametric finite
-                element method for simulating solid-state dewetting,”
-                <em>IMA J. Numer. Anal.</em>, 41, 2026–2055, 2021.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong> and W. Ren, “An energy-stable finite element method for
-                the simulation of moving contact lines in two-phase flows,”
-                <em>J. Comput. Phys.</em>, 417, 109582, 2020.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong>, W. Jiang, and W. Bao, “A parametric finite element method
-                for solid-state dewetting in three dimensions,” <em>SIAM J. Sci. Comput.</em>,
-                42(1), B327–B352, 2020.
-              </li>
-              <li>
-                W. Jiang, <strong>Q. Zhao</strong>, and W. Bao, “Sharp-interface model for
-                simulating solid-state dewetting in three dimensions,”
-                <em>SIAM J. Appl. Math.</em>, 80(4), 1654–1677, 2020.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong>, “A sharp-interface model and its numerical approximation
-                for solid-state dewetting with axisymmetric geometry,”
-                <em>J. Comput. Appl. Math.</em>, 361, 144–156, 2019.
-              </li>
-              <li>
-                W. Jiang and <strong>Q. Zhao</strong>, “Sharp-interface approach for simulating
-                solid-state dewetting in two dimensions: a Cahn–Hoffman ξ-vector formulation,”
-                <em>Physica D</em>, 390, 69–83, 2019.
-              </li>
-              <li>
-                W. Jiang, <strong>Q. Zhao</strong>, T. Qian, D. J. Srolovitz, and W. Bao,
-                “Application of Onsager’s variational principle to the dynamics of a solid toroidal
-                island on a substrate,” <em>Acta Materialia</em>, 163, 154–160, 2019.
-              </li>
-              <li>
-                <strong>Q. Zhao</strong>, W. Jiang, D. J. Srolovitz, and W. Bao, “Triple junction
-                drag effects during topological changes in the evolution of polycrystalline
-                microstructures,” <em>Acta Materialia</em>, 128, 345–350, 2017.
-              </li>
-              <li>
-                W. Bao, W. Jiang, Y. Wang, and <strong>Q. Zhao</strong>, “A parametric finite element
-                method for solid-state dewetting problems with anisotropic surface energies,”
-                <em>J. Comput. Phys.</em>, 330, 380–400, 2017.
-              </li>
-              <li>
-                W. Jiang, Y. Wang, <strong>Q. Zhao</strong>, W. Bao, and D. J. Srolovitz,
-                “Solid-state dewetting and island morphologies in strongly anisotropic materials,”
-                <em>Scripta Materialia</em>, 115, 123–127, 2016.
-              </li>
-            </ol>
-          </div>
-        </details>
-      </section>
-
-      <section class="experience section-pad" id="experience">
-        <div class="section-shell">
-          <div class="section-heading" data-reveal>
-            <p class="section-index">04 · Experience</p>
-            <h2>Academic path.</h2>
-          </div>
-
-          <div class="timeline-layout">
-            <div data-reveal>
-              <h3 class="timeline-title">Appointments</h3>
-              <ol class="timeline">
-                <li>
-                  <time>2023 — Present</time>
-                  <div>
-                    <strong>Research Professor</strong>
-                    <p>Department of Mathematics, University of Science and Technology of China</p>
-                  </div>
-                </li>
-                <li>
-                  <time>2021 — 2023</time>
-                  <div>
-                    <strong>Humboldt Postdoctoral Fellow</strong>
-                    <p>Department of Mathematics, University of Regensburg</p>
-                  </div>
-                </li>
-                <li>
-                  <time>2018 — 2021</time>
-                  <div>
-                    <strong>Postdoctoral Fellow</strong>
-                    <p>Department of Mathematics, National University of Singapore</p>
-                  </div>
-                </li>
-                <li>
-                  <time>2017 — 2018</time>
-                  <div>
-                    <strong>Research Assistant</strong>
-                    <p>Department of Mathematics, National University of Singapore</p>
-                  </div>
-                </li>
-              </ol>
-            </div>
-
-            <div data-reveal>
-              <h3 class="timeline-title">Education</h3>
-              <ol class="timeline">
-                <li>
-                  <time>2013 — 2017</time>
-                  <div>
-                    <strong>Ph.D. in Applied Mathematics</strong>
-                    <p>National University of Singapore</p>
-                  </div>
-                </li>
-                <li>
-                  <time>2009 — 2013</time>
-                  <div>
-                    <strong>B.Sc. in Applied Mathematics</strong>
-                    <p>University of Science and Technology of China</p>
-                  </div>
-                </li>
-              </ol>
-
-              <div class="honor-card">
-                <span>Selected honor</span>
-                <strong>Alexander von Humboldt Research Fellowship</strong>
-                <p>2021–2023 · Germany</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact section-shell section-pad" id="contact">
-        <div class="contact-card" data-reveal>
-          <div>
-            <p class="section-index">05 · Contact</p>
-            <h2>Let’s talk about mathematics.</h2>
+            <h2>Four connected directions.</h2>
             <p>
-              For research collaboration, academic visits, or student opportunities, the best way
-              to reach me is by email.
+              Select a direction to explore its central questions, methods, and recurring
+              structures. The modules are designed to grow as new projects develop.
             </p>
+          </div>
+        </div>
+
+        <div class="research-tabs" role="group" aria-label="Research directions">
+          <button class="research-tab is-active" type="button" data-research="interfaces" aria-pressed="true">
+            <span>01</span><small>MODELING</small><strong>Free boundary &amp; interface problems</strong>
+            <span class="research-tab-description">Moving geometry, sharp interfaces, and material evolution.</span><i>Exploring →</i>
+          </button>
+          <button class="research-tab" type="button" data-research="geometry" aria-pressed="false">
+            <span>02</span><small>GEOMETRY</small><strong>Geometric evolution equations</strong>
+            <span class="research-tab-description">Curvature-driven flow, surface diffusion, and biomembranes.</span><i>Open module →</i>
+          </button>
+          <button class="research-tab" type="button" data-research="multiphase" aria-pressed="false">
+            <span>03</span><small>FLUIDS</small><strong>Multiphase flow</strong>
+            <span class="research-tab-description">Moving contact lines, triple junctions, and coupled interfaces.</span><i>Open module →</i>
+          </button>
+          <button class="research-tab" type="button" data-research="computing" aria-pressed="false">
+            <span>04</span><small>ANALYSIS</small><strong>Scientific computing</strong>
+            <span class="research-tab-description">Stable finite element methods and structure preservation.</span><i>Open module →</i>
+          </button>
+        </div>
+
+        <article class="research-panel" aria-live="polite" data-research-panel>
+          <div class="research-panel-copy">
+            <p class="panel-kicker" data-research-kicker>01 / INTERFACE DYNAMICS</p>
+            <h3 data-research-title>Modeling and simulation of evolving interfaces.</h3>
+            <p data-research-description>
+              Free boundaries turn the geometry itself into an unknown. My work develops models
+              and algorithms that accurately track this motion while respecting the underlying
+              thermodynamic structure.
+            </p>
+            <ul data-research-tags>
+              <li>Solid-state dewetting</li><li>Sharp-interface models</li><li>Parametric finite elements</li>
+            </ul>
+          </div>
+          <div class="research-formula" aria-hidden="true">
+            <span>STRUCTURE / PRINCIPLE</span>
+            <strong data-research-formula>V<sub>n</sub> = Δ<sub>s</sub> κ</strong>
+            <p data-research-note>geometry → variation → stable discretization</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="publications-section" id="publications">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-index">03 / PUBLICATIONS</p>
+            <div>
+              <h2>Research archive.</h2>
+              <p>
+                Updated from the USTC faculty publication record. Search by title, collaborator,
+                journal, or year, and use the filters to change the view.
+              </p>
+            </div>
+          </div>
+
+          <section class="publication-highlights" data-publication-highlights aria-label="Recent highlights"></section>
+
+          <div class="publication-tools">
+            <label class="publication-search">
+              <span class="sr-only">Search publications</span>
+              <input type="search" placeholder="Search title, collaborator, journal…" data-publication-search>
+              <span aria-hidden="true">⌕</span>
+            </label>
+
+            <div class="publication-filters" role="group" aria-label="Filter publications">
+              <button class="is-active" type="button" data-publication-filter="all">All</button>
+              <button type="button" data-publication-filter="preprint">Preprints</button>
+              <button type="button" data-publication-filter="2026">2026</button>
+              <button type="button" data-publication-filter="2025">2025</button>
+              <button type="button" data-publication-filter="earlier">2024 &amp; earlier</button>
+            </div>
+          </div>
+
+          <div class="publication-status" aria-live="polite">
+            <span data-publication-status>Showing recent publications</span>
+            <a href="https://scholar.google.com/citations?user=8vYkGpEAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+          </div>
+
+          <ol class="publication-list" data-publication-list></ol>
+          <button class="show-all-button" type="button" data-show-all>Show all publications ↓</button>
+
+          <noscript>
+            <p>
+              JavaScript is required for the interactive publication archive. The complete record
+              is also available on the
+              <a href="https://faculty.ustc.edu.cn/zhaoquan19/zh_CN/zdylm/994279/list/index.htm">USTC faculty page</a>.
+            </p>
+          </noscript>
+        </div>
+      </section>
+
+      <section class="experience-section section-shell" id="experience">
+        <div class="section-heading">
+          <p class="section-index">04 / ACADEMIC PATH</p>
+          <div><h2>Experience and education.</h2><p>A path through USTC, Singapore, and Regensburg.</p></div>
+        </div>
+
+        <div class="experience-grid">
+          <div>
+            <h3>Appointments</h3>
+            <ol class="timeline">
+              <li><time>2023 — Present</time><div><strong>Research Professor</strong><p>University of Science and Technology of China</p></div></li>
+              <li><time>2021 — 2023</time><div><strong>Humboldt Postdoctoral Fellow</strong><p>University of Regensburg</p></div></li>
+              <li><time>2018 — 2021</time><div><strong>Postdoctoral Fellow</strong><p>National University of Singapore</p></div></li>
+              <li><time>2017 — 2018</time><div><strong>Research Assistant</strong><p>National University of Singapore</p></div></li>
+            </ol>
+          </div>
+
+          <div>
+            <h3>Education</h3>
+            <ol class="timeline">
+              <li><time>2013 — 2017</time><div><strong>Ph.D. in Applied Mathematics</strong><p>National University of Singapore</p></div></li>
+              <li><time>2009 — 2013</time><div><strong>B.Sc. in Applied Mathematics</strong><p>University of Science and Technology of China</p></div></li>
+            </ol>
+
+            <article class="fellowship-card">
+              <span>SELECTED HONOR</span><strong>Alexander von Humboldt Research Fellowship</strong><p>2021–2023 · Germany</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-shell contact-layout">
+          <p class="section-index">05 / CONTACT</p>
+          <div>
+            <h2>Ideas are welcome.</h2>
+            <p>For research collaboration, academic visits, or student opportunities, please get in touch by email.</p>
           </div>
           <div class="contact-actions">
-            <a class="button button-light" href="mailto:quanzhao@ustc.edu.cn">
-              Email Quan Zhao <span aria-hidden="true">↗</span>
-            </a>
+            <a href="mailto:quanzhao@ustc.edu.cn">Email Quan Zhao <span>↗</span></a>
             <p>Department of Mathematics<br>University of Science and Technology of China<br>Hefei, China</p>
           </div>
         </div>
@@ -565,10 +336,10 @@
     </main>
 
     <footer class="site-footer">
-      <div class="section-shell footer-grid">
-        <p>© <span data-current-year></span> Quan Zhao</p>
-        <p>Computational &amp; Applied Mathematics · USTC</p>
-        <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      <div class="footer-shell">
+        <span>© <i data-current-year></i> Quan Zhao</span>
+        <span>RESEARCH ATLAS · MODELS → STRUCTURE → COMPUTATION</span>
+        <a href="#home">Back to top ↑</a>
       </div>
     </footer>
   </body>

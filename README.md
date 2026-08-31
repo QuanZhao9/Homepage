@@ -20,5 +20,6 @@ The site has no build step. Copy these files to the root of the GitHub Pages rep
 
 - `index.html` — content and page structure
 - `styles.css` — visual design and responsive layout
-- `script.js` — navigation, active-section, and reveal interactions
+- `publications.js` — publication records used by the searchable archive
+- `script.js` — navigation, research modules, publication filters, and interactions
 - `assets/quan-zhao.png` — profile image
