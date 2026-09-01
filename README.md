@@ -24,4 +24,4 @@ The site has no build step. Copy these files to the root of the GitHub Pages rep
 - `script.js` — navigation, research modules, publication filters, and interactions
 - `assets/quan-zhao.png` — profile image
 
-GoatCounter analytics is loaded only on the production hostname `quanzhao9.github.io`, so local previews are not counted.
+GoatCounter analytics is loaded only on the production hostname `quanzhao9.github.io`, so local previews are not counted. The official ISC-licensed GoatCounter client is vendored as `goatcounter.js` because its public CDN is not consistently reachable from China.
