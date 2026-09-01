@@ -60,7 +60,7 @@ document.querySelectorAll("[data-current-year]").forEach((element) => {
 const researchAreas = {
   interfaces: {
     kicker: "01 / INTERFACE DYNAMICS",
-    title: "Modeling and simulation of evolving interfaces.",
+    title: "Free boundary and interface problems.",
     description:
       "Free boundaries turn the geometry itself into an unknown. My work develops models and algorithms that accurately track this motion while respecting the underlying thermodynamic structure.",
     tags: ["Solid-state dewetting", "Sharp-interface models", "Parametric finite elements"],
@@ -69,7 +69,7 @@ const researchAreas = {
   },
   geometry: {
     kicker: "02 / GEOMETRIC FLOWS",
-    title: "Structure-preserving methods for evolving curves and surfaces.",
+    title: "Geometric evolution equations.",
     description:
       "Geometric evolution equations connect curvature, energy, and motion. I study discretizations that reproduce dissipation, volume conservation, and tangential redistribution at the numerical level.",
     tags: ["Willmore flow", "Surface diffusion", "Biomembranes"],
@@ -78,7 +78,7 @@ const researchAreas = {
   },
   multiphase: {
     kicker: "03 / MULTIPHASE SYSTEMS",
-    title: "Coupled interface dynamics in complex fluids.",
+    title: "Multiphase flow.",
     description:
       "Multiphase systems combine evolving geometry with fluid motion, contact lines, reactions, and junctions. The goal is a formulation that remains physically consistent and computationally robust.",
     tags: ["Moving contact lines", "Triple junctions", "ALE methods"],
@@ -86,8 +86,8 @@ const researchAreas = {
     note: "fluid flow ↔ interface motion ↔ force balance",
   },
   computing: {
-    kicker: "04 / NUMERICAL ANALYSIS",
-    title: "Algorithms that retain the structure of the model.",
+    kicker: "04 / NUMERICAL ANALYSIS & SCIENTIFIC COMPUTING",
+    title: "Numerical analysis and scientific computing.",
     description:
       "A numerical method should do more than approximate a solution. I focus on finite element schemes that preserve energy decay, conservation laws, and geometric invariants without sacrificing practical efficiency.",
     tags: ["Finite element analysis", "Energy stability", "Efficient solvers"],
