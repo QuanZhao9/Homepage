@@ -59,7 +59,7 @@ document.querySelectorAll("[data-current-year]").forEach((element) => {
 
 const researchAreas = {
   interfaces: {
-    kicker: "01 / INTERFACE DYNAMICS",
+    kicker: "01 / FREE BOUNDARY AND INTERFACE PROBLEMS",
     title: "Free boundary and interface problems.",
     description:
       "Free boundaries turn the geometry itself into an unknown. My work develops models and algorithms that accurately track this motion while respecting the underlying thermodynamic structure.",
@@ -68,7 +68,7 @@ const researchAreas = {
     note: "geometry → variation → stable discretization",
   },
   geometry: {
-    kicker: "02 / GEOMETRIC FLOWS",
+    kicker: "01.1 / GEOMETRIC EVOLUTION EQUATIONS",
     title: "Geometric evolution equations.",
     description:
       "Geometric evolution equations connect curvature, energy, and motion. I study discretizations that reproduce dissipation, volume conservation, and tangential redistribution at the numerical level.",
@@ -77,7 +77,7 @@ const researchAreas = {
     note: "energy law → geometric motion → discrete stability",
   },
   multiphase: {
-    kicker: "03 / MULTIPHASE SYSTEMS",
+    kicker: "01.2 / MULTIPHASE FLOW",
     title: "Multiphase flow.",
     description:
       "Multiphase systems combine evolving geometry with fluid motion, contact lines, reactions, and junctions. The goal is a formulation that remains physically consistent and computationally robust.",
@@ -86,7 +86,7 @@ const researchAreas = {
     note: "fluid flow ↔ interface motion ↔ force balance",
   },
   computing: {
-    kicker: "04 / NUMERICAL ANALYSIS & SCIENTIFIC COMPUTING",
+    kicker: "02 / NUMERICAL ANALYSIS & SCIENTIFIC COMPUTING",
     title: "Numerical analysis and scientific computing.",
     description:
       "A numerical method should do more than approximate a solution. I focus on finite element schemes that preserve energy decay, conservation laws, and geometric invariants without sacrificing practical efficiency.",

@@ -64,32 +64,50 @@
           <p class="section-index">01 / RESEARCH DIRECTIONS</p>
           <div>
             <h2>Research directions.</h2>
-            <p>Select a direction to explore its central questions, methods, and recurring structures.</p>
+            <p>
+              Free boundary and interface problems form the main application area, with geometric
+              evolution equations and multiphase flow as two principal themes. Numerical analysis
+              and scientific computing provide the broader methodological foundation.
+            </p>
           </div>
         </div>
 
-        <div class="research-tabs" role="group" aria-label="Research directions">
-          <button class="research-tab is-active" type="button" data-research="interfaces" aria-pressed="true">
-            <span>01</span><small>MODELING</small><strong>Free boundary and interface problems</strong>
-            <span class="research-tab-description">Moving geometry, sharp interfaces, and material evolution.</span><i>Exploring →</i>
-          </button>
-          <button class="research-tab" type="button" data-research="geometry" aria-pressed="false">
-            <span>02</span><small>GEOMETRY</small><strong>Geometric evolution equations</strong>
-            <span class="research-tab-description">Curvature-driven flow, surface diffusion, and biomembranes.</span><i>Open module →</i>
-          </button>
-          <button class="research-tab" type="button" data-research="multiphase" aria-pressed="false">
-            <span>03</span><small>FLUIDS</small><strong>Multiphase flow</strong>
-            <span class="research-tab-description">Moving contact lines, triple junctions, and coupled interfaces.</span><i>Open module →</i>
-          </button>
-          <button class="research-tab" type="button" data-research="computing" aria-pressed="false">
-            <span>04</span><small>ANALYSIS</small><strong>Numerical analysis and scientific computing</strong>
-            <span class="research-tab-description">Numerical analysis, stable finite element methods, and structure preservation.</span><i>Open module →</i>
+        <div class="research-hierarchy" role="group" aria-label="Research direction hierarchy">
+          <section class="research-parent-group">
+            <button class="research-parent-button is-active" type="button" data-research="interfaces" aria-pressed="true">
+              <span class="research-group-number">01</span>
+              <span class="research-group-copy">
+                <strong>Free boundary and interface problems</strong>
+                <span>Moving geometry, sharp interfaces, and material evolution.</span>
+              </span>
+            </button>
+
+            <div class="research-subtopics" role="group" aria-label="Themes within free boundary and interface problems">
+              <button class="research-subtopic" type="button" data-research="geometry" aria-pressed="false">
+                <span>01.1</span>
+                <strong>Geometric evolution equations</strong>
+                <small>Curvature-driven flow, surface diffusion, and biomembranes.</small>
+              </button>
+              <button class="research-subtopic" type="button" data-research="multiphase" aria-pressed="false">
+                <span>01.2</span>
+                <strong>Multiphase flow</strong>
+                <small>Moving contact lines, triple junctions, and coupled interfaces.</small>
+              </button>
+            </div>
+          </section>
+
+          <button class="research-secondary-group" type="button" data-research="computing" aria-pressed="false">
+            <span class="research-group-number">02</span>
+            <span class="research-group-copy">
+              <strong>Numerical analysis and scientific computing</strong>
+              <span>Analysis, stable finite element methods, and structure preservation.</span>
+            </span>
           </button>
         </div>
 
         <article class="research-panel" aria-live="polite" data-research-panel>
           <div class="research-panel-copy">
-            <p class="panel-kicker" data-research-kicker>01 / INTERFACE DYNAMICS</p>
+            <p class="panel-kicker" data-research-kicker>01 / FREE BOUNDARY AND INTERFACE PROBLEMS</p>
             <h3 data-research-title>Free boundary and interface problems.</h3>
             <p data-research-description>
               Free boundaries turn the geometry itself into an unknown. My work develops models
