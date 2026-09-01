@@ -19,9 +19,12 @@ The site has no build step. Copy these files to the root of the GitHub Pages rep
 ## Main files
 
 - `index.html` — content and page structure
+- `research.html` — research directions and publication archive
+- `visualizations.html` — movie and simulation library
 - `styles.css` — visual design and responsive layout
 - `publications.js` — publication records used by the searchable archive
 - `script.js` — navigation, research modules, publication filters, and interactions
-- `assets/quan-zhao.png` — profile image
+- `assets/favicon.svg` — site monogram icon
+- `assets/movies/` — future research visualization movies
 
 GoatCounter analytics is loaded only on the production hostname `quanzhao9.github.io`, so local previews are not counted. The official ISC-licensed GoatCounter client is vendored as `goatcounter.js` because its public CDN is not consistently reachable from China.

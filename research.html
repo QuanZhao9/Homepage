@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Research directions and publications of Quan Zhao in numerical analysis, interface dynamics, geometric flows, and multiphase systems."
+    >
+    <meta name="author" content="Quan Zhao">
+    <meta name="theme-color" content="#f2f6f2">
+    <link rel="canonical" href="https://quanzhao9.github.io/Homepage/research.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Research | Quan Zhao">
+    <meta property="og:description" content="Research directions and publication archive of Quan Zhao.">
+    <meta property="og:url" content="https://quanzhao9.github.io/Homepage/research.html">
+
+    <title>Research | Quan Zhao</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./publications.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="page-grid" aria-hidden="true"></div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="header-shell">
+        <a class="brand" href="./" aria-label="Quan Zhao, home">
+          <span class="brand-mark" aria-hidden="true"><i>QZ</i></span>
+          <span><strong>QUAN ZHAO</strong><small>RESEARCH</small></span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-button>MENU</button>
+
+        <nav id="primary-navigation" aria-label="Primary navigation" data-navigation>
+          <a href="./">Home</a>
+          <a class="is-current" href="./research.html">Research</a>
+          <a href="./visualizations.html">Research Visualizations</a>
+          <a class="faculty-link" href="https://faculty.ustc.edu.cn/zhaoquan1/en/index.htm" target="_blank" rel="noreferrer">USTC ↗</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero section-shell" id="top">
+        <p class="eyebrow">RESEARCH / DIRECTIONS &amp; PUBLICATIONS</p>
+        <h1>Research <em>atlas.</em></h1>
+        <p>
+          My research develops mathematical models and structure-preserving computational methods
+          for moving interfaces, geometric evolution equations, multiphase flows, and related
+          problems in scientific computing.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#directions">Research directions <span>↓</span></a>
+          <a class="quiet-link" href="#publications">Publication archive ↓</a>
+        </div>
+      </section>
+
+      <section class="research-section section-shell research-page-section" id="directions">
+        <div class="section-heading research-heading">
+          <p class="section-index">01 / RESEARCH DIRECTIONS</p>
+          <div>
+            <h2>Four connected directions.</h2>
+            <p>Select a direction to explore its central questions, methods, and recurring structures.</p>
+          </div>
+        </div>
+
+        <div class="research-tabs" role="group" aria-label="Research directions">
+          <button class="research-tab is-active" type="button" data-research="interfaces" aria-pressed="true">
+            <span>01</span><small>MODELING</small><strong>Free boundary &amp; interface problems</strong>
+            <span class="research-tab-description">Moving geometry, sharp interfaces, and material evolution.</span><i>Exploring →</i>
+          </button>
+          <button class="research-tab" type="button" data-research="geometry" aria-pressed="false">
+            <span>02</span><small>GEOMETRY</small><strong>Geometric evolution equations</strong>
+            <span class="research-tab-description">Curvature-driven flow, surface diffusion, and biomembranes.</span><i>Open module →</i>
+          </button>
+          <button class="research-tab" type="button" data-research="multiphase" aria-pressed="false">
+            <span>03</span><small>FLUIDS</small><strong>Multiphase flow</strong>
+            <span class="research-tab-description">Moving contact lines, triple junctions, and coupled interfaces.</span><i>Open module →</i>
+          </button>
+          <button class="research-tab" type="button" data-research="computing" aria-pressed="false">
+            <span>04</span><small>ANALYSIS</small><strong>Scientific computing</strong>
+            <span class="research-tab-description">Stable finite element methods and structure preservation.</span><i>Open module →</i>
+          </button>
+        </div>
+
+        <article class="research-panel" aria-live="polite" data-research-panel>
+          <div class="research-panel-copy">
+            <p class="panel-kicker" data-research-kicker>01 / INTERFACE DYNAMICS</p>
+            <h3 data-research-title>Modeling and simulation of evolving interfaces.</h3>
+            <p data-research-description>
+              Free boundaries turn the geometry itself into an unknown. My work develops models
+              and algorithms that accurately track this motion while respecting the underlying
+              thermodynamic structure.
+            </p>
+            <ul data-research-tags>
+              <li>Solid-state dewetting</li><li>Sharp-interface models</li><li>Parametric finite elements</li>
+            </ul>
+          </div>
+          <div class="research-formula" aria-hidden="true">
+            <span>STRUCTURE / PRINCIPLE</span>
+            <strong data-research-formula>V<sub>n</sub> = Δ<sub>s</sub> κ</strong>
+            <p data-research-note>geometry → variation → stable discretization</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="publications-section" id="publications">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-index">02 / PUBLICATIONS</p>
+            <div>
+              <h2>Publication archive.</h2>
+              <p>
+                Updated from the USTC faculty publication record. Search by title, collaborator,
+                journal, or year, and use the filters to change the view.
+              </p>
+            </div>
+          </div>
+
+          <section class="publication-highlights" data-publication-highlights aria-label="Recent highlights"></section>
+
+          <div class="publication-tools">
+            <label class="publication-search">
+              <span class="sr-only">Search publications</span>
+              <input type="search" placeholder="Search title, collaborator, journal…" data-publication-search>
+              <span aria-hidden="true">⌕</span>
+            </label>
+            <div class="publication-filters" role="group" aria-label="Filter publications">
+              <button class="is-active" type="button" data-publication-filter="all">All</button>
+              <button type="button" data-publication-filter="preprint">Preprints</button>
+              <button type="button" data-publication-filter="2026">2026</button>
+              <button type="button" data-publication-filter="2025">2025</button>
+              <button type="button" data-publication-filter="earlier">2024 &amp; earlier</button>
+            </div>
+          </div>
+
+          <div class="publication-status" aria-live="polite">
+            <span data-publication-status>Showing recent publications</span>
+            <a href="https://scholar.google.com/citations?user=8vYkGpEAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+          </div>
+
+          <ol class="publication-list" data-publication-list></ol>
+          <button class="show-all-button" type="button" data-show-all>Show all publications ↓</button>
+        </div>
+      </section>
+
+      <section class="contact-section research-contact">
+        <div class="section-shell contact-layout">
+          <p class="section-index">03 / CONTACT</p>
+          <div><h2>Discuss a problem.</h2><p>For collaboration or questions about this work, please contact me by email.</p></div>
+          <div class="contact-actions"><a href="mailto:quanzhao@ustc.edu.cn">Email Quan Zhao <span>↗</span></a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-shell">
+        <span>© <i data-current-year></i> Quan Zhao</span>
+        <span>RESEARCH · DIRECTIONS &amp; PUBLICATIONS</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
