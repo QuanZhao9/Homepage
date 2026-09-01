@@ -23,3 +23,5 @@ The site has no build step. Copy these files to the root of the GitHub Pages rep
 - `publications.js` — publication records used by the searchable archive
 - `script.js` — navigation, research modules, publication filters, and interactions
 - `assets/quan-zhao.png` — profile image
+
+GoatCounter analytics is loaded only on the production hostname `quanzhao9.github.io`, so local previews are not counted.

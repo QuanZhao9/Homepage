@@ -261,3 +261,13 @@ showAllButton?.addEventListener("click", () => {
 
 renderHighlights();
 renderPublications();
+
+const analyticsHostname = "quanzhao9.github.io";
+
+if (window.location.hostname === analyticsHostname) {
+  const analyticsScript = document.createElement("script");
+  analyticsScript.async = true;
+  analyticsScript.src = "https://gc.zgo.at/count.js";
+  analyticsScript.dataset.goatcounter = "https://quanzhao9.goatcounter.com/count";
+  document.head.append(analyticsScript);
+}
